@@ -16,6 +16,23 @@
 			}
 			}
 		</script>
+
+		<!-- css styling for the schedule section -->
+        	<style>
+            		/* CSS for the Schedule Grid */
+            .		schedule-grid {
+                		display: grid;
+                		grid-template-columns: repeat(8, 1fr); /* 8 columns for 7 days + empty leftmost column */
+                		grid-gap: 8px;
+            		}
+
+            		.day, .time-slot, .event {
+                		border: 1px solid #ccc;
+                		padding: 8px;
+                		text-align: center;
+            		}
+        	</style>
+
 		
 		<title>Umair Alvi</title>
 		<meta charset="utf-8" />
@@ -73,45 +90,39 @@
 									<h2>Schedule</h2>
 								</header>
 								
-								<!-- Calendar Table -->
-   								 <table class="calendar">
-        								<thead>
-            									<tr>
-                									<th>Time/Day</th>
-                									<th>Monday</th>
-                									<th>Tuesday</th>
-                									<th>Wednesday</th>
-                									<th>Thursday</th>
-                									<th>Friday</th>
-                									<th>Saturday</th>
-                									<th>Sunday</th>
-            									</tr>
-        								</thead>
-        								<tbody>
-										<!-- Time Slot 1 -->
-            									<tr>
-                									<td>8:00 AM - 9:00 AM</td>
-                									<td>Event A</td>
-                									<td></td>
-                									<td>Event B</td>
-                									<td></td>
-                									<td>Event C</td>
-                									<td></td>
-                									<td></td>
-            									</tr>
+								<!-- Grid-based Schedule -->
+    								<div class="schedule-grid">
+        								<!-- Days of the week -->
+        								<div class="day"></div>
+        								<div class="day">Monday</div>
+        								<div class="day">Tuesday</div>
+        								<div class="day">Wednesday</div>
+        								<div class="day">Thursday</div>
+        								<div class="day">Friday</div>
+        								<div class="day">Saturday</div>
+        								<div class="day">Sunday</div>
 
-										<tr>
-                									<td>9:00 AM - 10:00 AM</td>
-               										<td></td>
-                									<td>Event D</td>
-                									<td></td>
-                									<td>Event E</td>
-                									<td></td>
-                									<td>Event F</td>
-                									<td></td>
-            									</tr>
-									</tbody>
-								 </table>
+        								<!-- Time slots and events -->
+        								<div class="time-slot">8:00 AM - 9:00 AM</div>
+        								<div class="event">Event A</div>
+        								<div class="event">Event B</div>
+        								<div class="event">Event C</div>
+        								<div class="event"></div>
+        								<div class="event">Event D</div>
+        								<div class="event">Event E</div>
+        								<div class="event"></div>
+
+        								<div class="time-slot">9:00 AM - 10:00 AM</div>
+        								<div class="event"></div>
+        								<div class="event">Event F</div>
+        								<div class="event">Event G</div>
+        								<div class="event">Event H</div>
+        								<div class="event"></div>
+        								<div class="event">Event I</div>
+        								<div class="event">Event J</div>
+
+        
+    								</div>
 							</article>
 
 							<article id="online-form" class="panel">
