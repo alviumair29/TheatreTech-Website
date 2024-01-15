@@ -164,41 +164,10 @@
 								<header>
 									<h2>App Integration</h2>
 								</header>
-
-								<!-- Weather Display Container -->
-    								<div id="weather-container">
-       		 							<!-- Weather information will be displayed here -->
-    								</div>
-
-    								<!-- Script to Fetch and Display Weather Data -->
-    								<script>
-        							// Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
-        							const apiKey = '0ab7006df1d50f83008b0b01119144e6';
-        							const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=CityName&appid=' + apiKey;
-
-        							// Function to fetch and display weather data
-        							async function fetchWeather() {
-            								try {
-                								const response = await fetch(apiUrl);
-                								const data = await response.json();
-
-                								// Display the weather information in the 'weather-container' div
-                								document.getElementById('weather-container').innerHTML = `
-                    								<h3>Current Weather</h3>
-                    								<p>City: ${data.name}</p>
-                    								<p>Temperature: ${data.main.temp}°C</p>
-                    								<p>Weather: ${data.weather[0].description}</p>
-                `								;
-            								} catch (error) {
-                								console.error('Error fetching weather data:', error);
-            									}
-        							}
-
-        							// Fetch weather data when the page loads
-        							window.addEventListener('load', fetchWeather);
-    								</script>
-								
-								
+								<!-- Weather Network Embed Code -->
+    								<div class="weather-iframe">
+        								<iframe src="https://www.theweathernetwork.com/ca/weather/ontario/mississauga" width="100%" height="600" frameborder="0"></iframe>
+    								</div>								
 							</article>
 
 					</div>
