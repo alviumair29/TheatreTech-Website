@@ -17,22 +17,6 @@
 			}
 		</script>
 
-		<!-- css styling for the schedule section -->
-        	<style>
-            		/* CSS for the Schedule Grid */
-            .		schedule-grid {
-                		display: grid;
-                		grid-template-columns: repeat(8, 1fr); /* 8 columns for 7 days + empty leftmost column */
-                		grid-gap: 8px;
-            		}
-
-            		.day, .time-slot, .event {
-                		border: 1px solid #ccc;
-                		padding: 8px;
-                		text-align: center;
-            		}
-        	</style>
-
 		
 		<title>Umair Alvi</title>
 		<meta charset="utf-8" />
@@ -89,40 +73,10 @@
 								<header>
 									<h2>Schedule</h2>
 								</header>
-								
-								<!-- Grid-based Schedule -->
-    								<div class="schedule-grid">
-        								<!-- Days of the week -->
-        								<div class="day"></div>
-        								<div class="day">Monday</div>
-        								<div class="day">Tuesday</div>
-        								<div class="day">Wednesday</div>
-        								<div class="day">Thursday</div>
-        								<div class="day">Friday</div>
-        								<div class="day">Saturday</div>
-        								<div class="day">Sunday</div>
-
-        								<!-- Time slots and events -->
-        								<div class="time-slot">8:00 AM - 9:00 AM</div>
-        								<div class="event">Event A</div>
-        								<div class="event">Event B</div>
-        								<div class="event">Event C</div>
-        								<div class="event"></div>
-        								<div class="event">Event D</div>
-        								<div class="event">Event E</div>
-        								<div class="event"></div>
-
-        								<div class="time-slot">9:00 AM - 10:00 AM</div>
-        								<div class="event"></div>
-        								<div class="event">Event F</div>
-        								<div class="event">Event G</div>
-        								<div class="event">Event H</div>
-        								<div class="event"></div>
-        								<div class="event">Event I</div>
-        								<div class="event">Event J</div>
-
-        
-    								</div>
+								<!-- Embedded Google Calendar for smooth scheduling -->
+								<div class="google-calendar-embed">
+									<iframe src="https://calendar.google.com/calendar/embed?src=265c21ef6808fc316515c4f78486da807cb3f302a8eff6c07405366563e6ea6b%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>        
+								</div>
 							</article>
 
 							<article id="online-form" class="panel">
