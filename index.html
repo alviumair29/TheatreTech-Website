@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html>
+	
+	<head>
+		<script>
+			function requestCredentials() {
+			const user = prompt("Enter your username:");
+			const password = prompt("Enter your password:");
+			if (user === "alviu02" && password === "Shanks@40") {
+				// Open the protected page in a new tab if credentials are correct
+				window.open('secure-doc.html', '_blank');}
+				else {
+				// Alert the user if credentials are incorrect
+				alert("Credentials are incorrect. Please try again!");
+			}
+			}
+		</script>
+		
+		<title>Astral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#Announcements" class="icon solid fa-bullhorn"><span>Announcements</span></a>
+						<a href="#schedule" class="icon solid fa-calendar"><span>Schedule</span></a>
+						<a href="#online-form" class="icon solid fa-paper-plane"><span>Online Form</span></a>
+						<a href="#management" class="icon solid fa-address-card"><span>Management</span></a>
+    					<a href="#information-table" class="icon solid fa-table"><span>Info Table</span></a>
+    					<a href="#secure-documents" class="icon solid fa-lock"><span>Secure Docs</span></a>
+    					<a href="#public-downloads" class="icon solid fa-download"><span>Downloads</span></a>
+    					<a href="#sharing-section" class="icon solid fa-share-alt"><span>Sharing</span></a>
+    					<a href="#app-integration" class="icon solid fa-cogs"><span>Integration</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Umair Alvi</h1>
+									<p>Computer Science Student</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+							<!-- Announcements -->
+							<article id="Announcements" class="panel">
+								<header>
+									<h2>Announcements</h2>
+								</header>
+								<!-- Add your announcment here -->
+							</article>
+
+							<article id="schedule" class="panel">
+								<header>
+									<h2>Schedule</h2>
+								</header>
+								<!-- Add your schedule here -->
+							</article>
+
+							<article id="online-form" class="panel">
+								<header>
+									<h2>Online Form</h2>
+								</header>
+								<!-- Add form here-->
+							</article>
+
+							<article id="management" class="panel">
+								<header>
+									<h2>Management Contact</h2>
+								</header>
+								<!-- Add your management contact information and form here -->
+							</article>
+							
+							<!-- Information Table -->
+							<article id="information-table" class="panel">
+								<header>
+									<h2>Information Table</h2>
+								</header>
+								<!-- Add your information table here -->
+							</article>
+							
+							<!-- Secure Pages/Documents -->
+							<article id="secure-documents" class="panel">
+								<header>
+									<h2>Secure Documents</h2>
+								</header>
+								<p>This section contains secure documents. To access them, please enter your credentials.</p>
+								<button onclick="requestCredentials()">Access Secure Documents</button>
+							</article>
+							
+							<!-- Public Downloads -->
+							<article id="public-downloads" class="panel">
+								<header>
+									<h2>Public Downloads</h2>
+								</header>
+								<!-- Add your public downloads section here -->
+							</article>
+							
+							<!-- Sharing Section -->
+							<article id="sharing-section" class="panel">
+								<header>
+									<h2>Sharing Section</h2>
+								</header>
+								<p>This section contains shared content. Click the button below to view details.</p>
+                				<a href="shared-doc.html" target="_blank" class="button">View Shared Content</a>
+							</article>
+							
+							<!-- App Integration -->
+							<article id="app-integration" class="panel">
+								<header>
+									<h2>App Integration</h2>
+								</header>
+								<!-- Add your app integration section here -->
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
