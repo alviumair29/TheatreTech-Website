@@ -83,7 +83,20 @@
 								<header>
 									<h2>Online Form</h2>
 								</header>
-								<!-- Add form here-->
+
+								<!-- Online Form -->
+        							<form id="biographyForm" action="submit-biography.php" method="post">
+            								<label for="fullName">Full Name:</label>
+            								<input type="text" id="fullName" name="fullName" required>
+
+            								<label for="biography">Biographical Note:</label>
+            								<textarea id="biography" name="biography" rows="4" required></textarea>
+
+            								<button type="submit">Submit</button>
+        							</form>
+
+        							<!-- Instructions for Submission -->
+        							<p>Instructions: Please fill in the form with your full name and a short biographical note. Click the "Submit" button to submit your information.</p>
 							</article>
 
 							<article id="management" class="panel">
